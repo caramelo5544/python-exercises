@@ -12,4 +12,7 @@ while True:
         print("Lower!")
     else:
         print("Correct! Tries:", tries)
+        f = open("scores.txt", "a")
+        f.write(str(tries) + "\n")
+        f.close()
         break
